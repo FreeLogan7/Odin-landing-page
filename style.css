@@ -5,9 +5,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin: 0;
+    color: white;
 }
 
 .container {
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,33 +20,79 @@ body {
 .section-1 {
     background-color: #1F2937;
     flex-grow: 6;
+    color: white;
+    font-size: 12px;
+    flex-basis: 0;
+   
 }
 
 .section-2 {
     background-color: white;
     flex-grow: 6;
+    flex-basis: 0;
 }
 
 .section-3 {
     background-color: #E5E7EB;
     flex-grow: 5;
+    flex-basis: 0;
 }
 
 .section-4 {
     background-color: white;
     flex-grow: 4;
+    flex-basis: 0;
 }
 
 .section-5 {
     background-color: #1F2937;
     flex-grow: 1;
+    flex-basis: 0;
 }
 
 .center {
     display: flex;
-    justify-content: center;
+    
     flex-direction: column;
-    align-items: center;
     padding-left: 75px;
     padding-right: 75px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.container-2 {
+    display: flex;
+    flex-grow: 1;
+}
+
+.container-2 .body {
+    
+    flex-grow: 1;
+    flex-basis: 0;
+    align-content: center;
+}
+
+.container-2 .image-placeholder {
+    
+    flex-grow: 1;
+    flex-basis: 0;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
 }
