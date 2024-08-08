@@ -13,17 +13,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 625px;
+    width: 750px;
     height: 100vh;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .section-1 {
     background-color: #1F2937;
     flex-grow: 6;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     flex-basis: 0;
-   
+
 }
 
 .section-2 {
@@ -50,20 +57,21 @@ body {
     flex-basis: 0;
 }
 
-.center {
-    display: flex;
-    
-    flex-direction: column;
-    padding-left: 75px;
-    padding-right: 75px;
-    
-}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
+}
+
+.header-logo {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.header-links {
+    color: lightgray;
 }
 
 ul {
@@ -76,23 +84,47 @@ ul {
 .container-2 {
     display: flex;
     flex-grow: 1;
+    gap: 12px;
 }
 
 .container-2 .body {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     flex-grow: 1;
     flex-basis: 0;
-    align-content: center;
+    gap: 8px;
+
 }
 
 .container-2 .image-placeholder {
-    
     flex-grow: 1;
     flex-basis: 0;
     align-content: center;
     align-self: center;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 150px;
     background-color: gray;
+}
+
+.body .title {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.body .text {
+    color: lightgray;
+}
+
+button {
+    background-color: rgb(117, 166, 222);
+    color: white;
+    font-size: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+
+
 }
